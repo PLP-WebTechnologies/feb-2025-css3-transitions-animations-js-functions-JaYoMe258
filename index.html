@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 & JavaScript Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Playground</h1>
+            <p>Explore CSS3 animations and localStorage</p>
+        </header>
+
+        <main>
+            <section class="animation-section">
+                <h2>CSS3 Animations</h2>
+                
+                <div class="animation-box" id="pulse-box">
+                    <p>Hover to Pulse</p>
+                </div>
+                
+                <div class="animation-box" id="rotate-box">
+                    <p>Click to Rotate</p>
+                </div>
+                
+                <div class="animation-box" id="color-change-box">
+                    <p>Color Transition</p>
+                </div>
+                
+                <button id="animate-btn" class="btn">Trigger Animation</button>
+            </section>
+
+            <section class="preferences-section">
+                <h2>User Preferences</h2>
+                
+                <div class="preference-control">
+                    <label for="theme-select">Choose Theme:</label>
+                    <select id="theme-select">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                
+                <div class="preference-control">
+                    <label for="animation-speed">Animation Speed:</label>
+                    <input type="range" id="animation-speed" min="0.5" max="3" step="0.5" value="1">
+                    <span id="speed-value">1x</span>
+                </div>
+                
+                <div class="preference-control">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                </div>
+                
+                <button id="save-btn" class="btn">Save Preferences</button>
+                <button id="reset-btn" class="btn btn-outline">Reset Preferences</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
